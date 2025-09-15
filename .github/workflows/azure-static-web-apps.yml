@@ -28,6 +28,7 @@ jobs:
           app_location: portfolio-site
           api_location: ""
           output_location: ""
+          skip_deploy_on_missing_secrets: true
 
   close_pull_request:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
